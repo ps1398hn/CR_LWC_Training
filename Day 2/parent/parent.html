@@ -1,0 +1,10 @@
+<template>
+    <lightning-card>
+        <c-child if:true={showComp} people-data={dataList} onupdatevent={handleEvent}>
+            <p slot="header">Child slot working</p>
+            
+        </c-child>
+        <lightning-button label="Toggle Child" onclick={toggleChild}></lightning-button>
+
+    </lightning-card>
+</template>
