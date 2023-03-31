@@ -1,0 +1,21 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_medium lgc-bg">
+            
+            <lightning-input type="text" id="name" label="Enter first name" required></lightning-input>
+            <lightning-input type="text" label="Enter last name" required></lightning-input>
+            <lightning-input type="email" label="Enter Email" required></lightning-input>
+            <lightning-input type="password" label="Enter Password" required></lightning-input>
+            <lightning-input type="password" label="Confirm Password" required></lightning-input>
+            <lightning-input type="number" label="Enter Phone Number" required></lightning-input>
+            <lightning-input type="text" label="Enter City" required></lightning-input>
+            <lightning-input type="text" label="Enter State" required></lightning-input>
+            <lightning-input type="text" label="Enter Country" required></lightning-input><br>
+            <lightning-button variant="brand" label="Submit" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <p>{_result}</p>
+        
+        
+    </lightning-card>
+    
+</template>
