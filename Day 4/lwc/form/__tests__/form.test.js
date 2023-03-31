@@ -19,7 +19,7 @@ describe('c-form', () => {
         document.body.appendChild(element);
 
         // Assert
-        // const div = element.shadowRoot.querySelector('div');
-        expect(1).toBe(1);
+         const p = element.shadowRoot.querySelectorAll('lightning-input');
+        expect(p.value).toBe(/^[a-zA-Z ]+$/);;
     });
 });
